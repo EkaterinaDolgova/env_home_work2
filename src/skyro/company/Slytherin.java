@@ -3,54 +3,62 @@ package skyro.company;
 import java.util.Objects;
 
 public class Slytherin extends Hogwarts {
-    private int nobility;
-    private int honor;
-    private int courage;
+    private int tricky;
+    private int resolute;
+    private int resourcefulness;
 
-    public Slytherin(String student, int character, int power, int transgress, int nobility, int honor, int courage) {
+    public Slytherin(String student, int character, int power, int transgress, int tricky, int resolute, int resourcefulness) {
         super(student, character, power, transgress);
-        if (nobility <0|| nobility >100|| honor <0|| honor >100|| courage <0|| courage >100) {
+        if (tricky < 0 || tricky > 100 || resolute < 0 || resolute > 100 || resourcefulness < 0 || resourcefulness > 100) {
 
             throw new IllegalArgumentException("Используйте значения в параметрах от 0 до 100");
         }
-        this.nobility = nobility;
-        this.honor = honor;
-        this.courage = courage;
+        this.tricky = tricky;
+        this.resolute = resolute;
+        this.resourcefulness = resourcefulness;
     }
 
-    public int getNobility() {
-        return nobility;
-    }
-    public void setNobility(int nobility) {
-        this.nobility = nobility;
+    public int getTricky() {
+        return tricky;
     }
 
-    public int getHonor() {
-        return this.honor;
-    }
-    public void setHonor(int honor) {
-        this.honor = honor;
+    public void setTricky(int tricky) {
+        this.tricky = tricky;
     }
 
-    public int getCourage() {
-        return this.courage;
-    }
-    public void setCourage(int courage) {
-        this.courage = courage;
-    }
-    @Override public String toString() {
-        return", факультет Slytherin, "+"благородство= "+ nobility +", честь= "+ honor +", храбрость= "+ courage;
+    public int getResolute() {
+        return this.resolute;
     }
 
-    @Override public boolean equals(Object o) {
-        if (this== o) return true;
-        if (o ==null|| getClass() != o.getClass()) return false;
+    public void setResolute(int resolute) {
+        this.resolute = resolute;
+    }
+
+    public int getResourcefulness() {
+        return this.resourcefulness;
+    }
+
+    public void setResourcefulness(int resourcefulness) {
+        this.resourcefulness = resourcefulness;
+    }
+
+    @Override
+    public String toString() {
+        return ", факультет Slytherin, " + "хитрые= " + tricky + ", решительные= " + resolute + ", находчивость= " + resourcefulness;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
         Slytherin that = (Slytherin) o;
-        return nobility == that.nobility && honor == that.honor && courage == that.courage;
+        return tricky == that.tricky && resolute == that.resolute && resourcefulness == that.resourcefulness;
 
     }
-    @Override public int hashCode() {
-        return Objects.hash(nobility, honor, courage);
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(tricky, resolute, resourcefulness);
     }
 }
 

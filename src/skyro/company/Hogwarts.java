@@ -33,6 +33,12 @@ public class Hogwarts {
         this.character = character;
     }
 
+    @Override
+    public String toString() {
+        return "Hogwarts, " + "ученик: " + student + ", умный= " + character + ", сила магии= " + power
+                + ", расстояние трангрессии=" + transgress;
+    }
+
 }
 
 
