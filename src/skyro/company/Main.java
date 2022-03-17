@@ -3,7 +3,7 @@ package skyro.company;
 public class Main {
 
     public static void main(String[] args) {
-        Hogwarts[] griffindor = {
+        Hogwarts[] griffindor= {
                 new Griffindor("Гарри Поттер", 1, 12, 10, 10,10,11),
                 new Griffindor("Гермиона Грейнджер", 2, 11, 9, 9,9,8),
                 new Griffindor("Рон Уизли", 3, 10, 8, ,8,8,8)
@@ -23,13 +23,11 @@ public class Main {
                 new Slytherin("Грэхэм Монтегю", 3, 11, 9, 8,5,6),
                 new Slytherin("Грегори Гойл", 3, 10, 8, 4,5,8)
         };
-
-      //  PrintServise.print(griffindor, 1);
         PrintServise.print1(griffindor);
-       // PrintServise.print(hufflepuff, 2);
-       // PrintServise.print(ravenclaw, 3);
-       // PrintServise.print(slytherin, 4);
-/*
+        PrintServise.print1(hufflepuff);
+        PrintServise.print1(ravenclaw);
+        PrintServise.print1(slytherin);
+
         PrintServise.printSmart(griffindor);
         PrintServise.printSmart(hufflepuff);
         PrintServise.printSmart(ravenclaw);
@@ -61,6 +59,6 @@ public class Main {
         PrintServise.printTrang1(slytherin);
 
         PrintServise.printPower2(ravenclaw, slytherin);
-*/
+
     }
 }

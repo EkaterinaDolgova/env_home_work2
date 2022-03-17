@@ -1,42 +1,7 @@
 package skyro.company;
 
 public class PrintServise {
-/*    public static void print(Hogwarts[] hogwarts, int ch) {
-        String char1_ = null;
-        String char2_ = null;
-        String char3_ = null;
-        switch (ch) {
-            case (1):
-                char1_ = Griffindor.char1;
-                char2_ = Griffindor.char2;
-                char3_ = Griffindor.char3;
-                break;
-            case (2):
-                char1_ = Hufflepuff.charh1;
-                char2_ = Hufflepuff.charh2;
-                char3_ = Hufflepuff.charh3;
-                break;
-            case (3):
-                char1_ = Ravenclaw.charh1;
-                char2_ = Ravenclaw.charh2;
-                char3_ = Ravenclaw.charh3;
-                break;
-            case (4):
-                char1_ = Slytherin.charh1;
-                char2_ = Slytherin.charh2;
-                char3_ = Slytherin.charh3;
-                break;
-        }
-        for (int i = 0; i < hogwarts.length; i++) {
-            Hogwarts hogwarts1 = hogwarts[i];
-            System.out.println("Ученик: " + hogwarts1.getStudent() + " Характер: " + hogwarts1.getCharacter() +
-                    " Мощность: " + hogwarts1.getPower() +
-                    " Трансгресия:" + hogwarts1.getTransgress() +
-                    " Характер факультета:" + hogwarts1. char1_ + ", " + char2_ + ", " + char3_);
-        }
 
-    }
-*/
     public static void print1(Hogwarts[] hogwarts){
         for (int i = 0; i < hogwarts.length; i++) {
             Hogwarts hogwarts1 = hogwarts[i];
@@ -46,7 +11,6 @@ public class PrintServise {
                     " Характер факультета:" + hogwarts1.toString());
         }
     }
-
 
     //Кто самый умный из факультета
     public static void printSmart(Hogwarts[] hogwarts) {
