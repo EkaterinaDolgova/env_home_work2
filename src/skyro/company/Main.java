@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Hogwarts[] griffindor= {
                 new Griffindor("Гарри Поттер", 1, 12, 10, 10,10,11),
-                new Griffindor("Гермиона Грейнджер", 2, 11, 9, 9,9,8),
-                new Griffindor("Рон Уизли", 3, 10, 8, ,8,8,8)
+                new Griffindor("Гермиона Грейнджер", 2, 11, 9, 9,6,8),
+                new Griffindor("Рон Уизли", 3, 10, 8,7,9,10)
         };
         Hogwarts[] hufflepuff = {
                 new Hufflepuff("Захария Смит", 2, 11, 9, 7,7,7),
