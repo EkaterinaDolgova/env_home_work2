@@ -5,7 +5,6 @@ public class Hogwarts {
     private int character;
     private int power;
     private int transgress;
-    //Static Grinffindor char1;
 
     public Hogwarts(String student, int character, int power, int transgress) {
         this.student = student;

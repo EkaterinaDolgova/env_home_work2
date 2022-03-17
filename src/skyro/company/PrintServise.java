@@ -1,20 +1,7 @@
 package skyro.company;
 
-import static skyro.company.Griffindor.char1;
-import static skyro.company.Griffindor.char2;
-import static skyro.company.Griffindor.char3;
-import static skyro.company.Hufflepuff.charh1;
-import static skyro.company.Hufflepuff.charh2;
-import static skyro.company.Hufflepuff.charh3;
-import static skyro.company.Ravenclaw.charh1;
-import static skyro.company.Ravenclaw.charh2;
-import static skyro.company.Ravenclaw.charh3;
-import static skyro.company.Slytherin.charh1;
-import static skyro.company.Slytherin.charh2;
-import static skyro.company.Slytherin.charh3;
-
 public class PrintServise {
-    public static void print(Hogwarts[] hogwarts, int ch) {
+/*    public static void print(Hogwarts[] hogwarts, int ch) {
         String char1_ = null;
         String char2_ = null;
         String char3_ = null;
@@ -45,10 +32,21 @@ public class PrintServise {
             System.out.println("Ученик: " + hogwarts1.getStudent() + " Характер: " + hogwarts1.getCharacter() +
                     " Мощность: " + hogwarts1.getPower() +
                     " Трансгресия:" + hogwarts1.getTransgress() +
-                    " Характер факультета:" + char1_ + ", " + char2_ + ", " + char3_);
+                    " Характер факультета:" + hogwarts1. char1_ + ", " + char2_ + ", " + char3_);
         }
 
     }
+*/
+    public static void print1(Hogwarts[] hogwarts){
+        for (int i = 0; i < hogwarts.length; i++) {
+            Hogwarts hogwarts1 = hogwarts[i];
+            System.out.println("Ученик: " + hogwarts1.getStudent() + " Характер: " + hogwarts1.getCharacter() +
+                    " Мощность: " + hogwarts1.getPower() +
+                    " Трансгресия:" + hogwarts1.getTransgress() +
+                    " Характер факультета:" + hogwarts1.toString());
+        }
+    }
+
 
     //Кто самый умный из факультета
     public static void printSmart(Hogwarts[] hogwarts) {

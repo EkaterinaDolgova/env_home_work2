@@ -1,27 +1,56 @@
 package skyro.company;
 
+import java.util.Objects;
+
 public class Hufflepuff extends Hogwarts {
-    static String charh1;
-    static String charh2;
-    static String charh3;
+    private int nobility;
+    private int honor;
+    private int courage;
 
-    public Hufflepuff(String student, int character, int power, int transgress, String charh1, String charh2, String charh3) {
+    public Hufflepuff(String student, int character, int power, int transgress, int nobility, int honor, int courage) {
         super(student, character, power, transgress);
-        this.charh1 = charh1;
-        this.charh2 = charh2;
-        this.charh3 = charh3;
+        if (nobility <0|| nobility >100|| honor <0|| honor >100|| courage <0|| courage >100) {
+
+            throw new IllegalArgumentException("Используйте значения в параметрах от 0 до 100");
+        }
+        this.nobility = nobility;
+        this.honor = honor;
+        this.courage = courage;
     }
 
-    public String getCharh1() {
-        return this.charh1;
+    public int getNobility() {
+        return nobility;
+    }
+    public void setNobility(int nobility) {
+        this.nobility = nobility;
     }
 
-    public String getCharh2() {
-        return this.charh2;
+    public int getHonor() {
+        return this.honor;
+    }
+    public void setHonor(int honor) {
+        this.honor = honor;
     }
 
-    public String getCharh3() {
-        return this.charh3;
+    public int getCourage() {
+        return this.courage;
+    }
+    public void setCourage(int courage) {
+        this.courage = courage;
+    }
+    @Override public String toString() {
+        return", факультет Hufflepuff, "+"благородство= "+ nobility +", честь= "+ honor +", храбрость= "+ courage;
+    }
+
+    @Override public boolean equals(Object o) {
+        if (this== o) return true;
+        if (o ==null|| getClass() != o.getClass()) return false;
+        Hufflepuff that = (Hufflepuff) o;
+        return nobility == that.nobility && honor == that.honor && courage == that.courage;
+
+    }
+    @Override public int hashCode() {
+        return Objects.hash(nobility, honor, courage);
     }
 }
 

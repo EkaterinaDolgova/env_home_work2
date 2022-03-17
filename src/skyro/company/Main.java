@@ -3,33 +3,33 @@ package skyro.company;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
         Hogwarts[] griffindor = {
-                new Griffindor("Гарри Поттер", 1, 12, 10, "Благородство", "Честь", "Храбрость"),
-                new Griffindor("Гермиона Грейнджер", 2, 11, 9, "Благородство", "Честь", "Храбрость"),
-                new Griffindor("Рон Уизли", 3, 10, 8, "Благородство", "Честь", "Храбрость")
+                new Griffindor("Гарри Поттер", 1, 12, 10, 10,10,11),
+                new Griffindor("Гермиона Грейнджер", 2, 11, 9, 9,9,8),
+                new Griffindor("Рон Уизли", 3, 10, 8, ,8,8,8)
         };
         Hogwarts[] hufflepuff = {
-                new Hufflepuff("Захария Смит", 2, 11, 9, "Трудолюбивы", "Верны", "Честны"),
-                new Hufflepuff("Седрик Диггори", 3, 11, 9, "Трудолюбивы", "Верны", "Честны"),
-                new Hufflepuff("Джастин Финч-Флетчли", 1, 8, 9, "Трудолюбивы", "Верны", "Честны")
+                new Hufflepuff("Захария Смит", 2, 11, 9, 7,7,7),
+                new Hufflepuff("Седрик Диггори", 3, 11, 9, 8,7,9),
+                new Hufflepuff("Джастин Финч-Флетчли", 1, 8, 9, 7,7,6)
         };
         Hogwarts[] ravenclaw = {
-                new Ravenclaw("Чжоу Чанг", 2, 11, 9, "Умны", "Мудры", "Остроумны"),
-                new Ravenclaw("Падма Патил", 3, 11, 9, "Умны", "Мудры", "Остроумны"),
-                new Ravenclaw("Маркус Белби", 2, 10, 8, "Умны", "Мудры", "Остроумны")
+                new Ravenclaw("Чжоу Чанг", 2, 11, 9, 8,6,7),
+                new Ravenclaw("Падма Патил", 3, 11, 9, 10,8,7),
+                new Ravenclaw("Маркус Белби", 2, 10, 8, 8,7,8)
         };
         Hogwarts[] slytherin = {
-                new Slytherin("Драко Малфой", 1, 11, 9, "Хитрость", "Решительность", "Жажда власти"),
-                new Slytherin("Грэхэм Монтегю", 3, 11, 9, "Хитрость", "Решительность", "Жажда власти"),
-                new Slytherin("Грегори Гойл", 3, 10, 8, "Хитрость", "Решительность", "Жажда власти")
+                new Slytherin("Драко Малфой", 1, 11, 9, 10,10,10),
+                new Slytherin("Грэхэм Монтегю", 3, 11, 9, 8,5,6),
+                new Slytherin("Грегори Гойл", 3, 10, 8, 4,5,8)
         };
 
-        PrintServise.print(griffindor, 1);
-        PrintServise.print(hufflepuff, 2);
-        PrintServise.print(ravenclaw, 3);
-        PrintServise.print(slytherin, 4);
-
+      //  PrintServise.print(griffindor, 1);
+        PrintServise.print1(griffindor);
+       // PrintServise.print(hufflepuff, 2);
+       // PrintServise.print(ravenclaw, 3);
+       // PrintServise.print(slytherin, 4);
+/*
         PrintServise.printSmart(griffindor);
         PrintServise.printSmart(hufflepuff);
         PrintServise.printSmart(ravenclaw);
@@ -61,6 +61,6 @@ public class Main {
         PrintServise.printTrang1(slytherin);
 
         PrintServise.printPower2(ravenclaw, slytherin);
-
+*/
     }
 }
