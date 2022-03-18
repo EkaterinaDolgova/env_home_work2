@@ -28,7 +28,6 @@ public class Hogwarts {
     public int getCharacter() {
         return character;
     }
-
     public void setCharacter(int character) {
         this.character = character;
     }
