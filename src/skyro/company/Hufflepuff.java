@@ -55,7 +55,6 @@ public class Hufflepuff extends Hogwarts {
         return industriousness == that.industriousness && loyal == that.loyal && honor == that.honor;
 
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(industriousness, loyal, honor);
