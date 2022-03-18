@@ -4,11 +4,12 @@ public class PrintServise {
 
     public static void printStudents(Hogwarts[] student) {
         for (int i = 0; i < student.length; i++) {
-          //  Hogwarts students = student[i];
-            System.out.println("Ученик:" + student[i].getStudent()+" "+student[i].toString());
-           // System.out.println(Hogwarts[i].toString());
+            //  Hogwarts students = student[i];
+            System.out.println("Ученик:" + student[i].getStudent() + " " + student[i].toString());
+            // System.out.println(Hogwarts[i].toString());
         }
     }
+
     //Кто самый умный из факультета
     public static void printSmart(Hogwarts[] student) {
         int minValue = student[0].getCharacter();

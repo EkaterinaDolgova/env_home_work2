@@ -33,31 +33,31 @@ public class Ravenclaw extends Hogwarts {
     public void setWitty(int witty) {
         this.witty = witty;
 
-    public int getCreative() {
-        return this.creative;
-    }
+        public int getCreative () {
+            return this.creative;
+        }
 
-    public void setCreative(int creative) {
-        this.creative = creative;
-    }
+        public void setCreative ( int creative){
+            this.creative = creative;
+        }
 
-    @Override
-    public String toString() {
-        return ", факультет Ravenclaw, " + "умные= " + smart + ", остроумные= " + witty + ", творческие= " + creative;
-    }
+        @Override
+        public String toString () {
+            return ", факультет Ravenclaw, " + "умные= " + smart + ", остроумные= " + witty + ", творческие= " + creative;
+        }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Ravenclaw that = (Ravenclaw) o;
-        return smart == that.smart && witty == that.witty && creative == that.creative;
+        @Override
+        public boolean equals (Object o){
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Ravenclaw that = (Ravenclaw) o;
+            return smart == that.smart && witty == that.witty && creative == that.creative;
 
-    }
+        }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(smart, witty, creative);
+        @Override
+        public int hashCode () {
+            return Objects.hash(smart, witty, creative);
+        }
     }
-}
 
