@@ -41,7 +41,6 @@ public class Griffindor extends Hogwarts {
     public void setCourage(int courage) {
         this.courage = courage;
     }
-
     @Override
     public String toString() {
         return ", факультет Gryffindor, " + "благородство= " + nobility + ", честь= " + honor + ", храбрость= " + courage;
