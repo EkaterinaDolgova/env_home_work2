@@ -32,7 +32,6 @@ public class Ravenclaw extends Hogwarts {
 
     public void setWitty(int witty) {
         this.witty = witty;
-    }
 
     public int getCreative() {
         return this.creative;

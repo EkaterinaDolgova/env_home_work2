@@ -9,7 +9,6 @@ public class PrintServise {
            // System.out.println(Hogwarts[i].toString());
         }
     }
-
     //Кто самый умный из факультета
     public static void printSmart(Hogwarts[] student) {
         int minValue = student[0].getCharacter();
